@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+
+header {
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #444;
+}
+
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cadastro {
+    background-color: #5b6cf2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    ;
+}
+
+.cadastro:hover {
+    transform: translateY(-3px);
+    background-color: white;
+    color: #5b6cf2;
+    border: 1px solid;
+    border-color: #5b6cf2;
+}
+
+.lista {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    padding: 0;
+}
+
+.descubra {
+    width: 100%;
+    background: linear-gradient(to right, #6579FF, #4D59A9, #23284C);
+    color: #ffffff;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.livros-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.livros-banner img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.livros-banner img:hover{
+    width: 250px;
+}
+
+.descubra h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.descubra p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.branco {
+    background-color: #ffffff;
+    color: #4052cd;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.branco:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: #ffffff;
+}
+
+.vantagens {
+    padding: 100px;
+}
+
+.vantagens-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.vantagens-info .roxo {
+    width: 100px;
+    height: 100px;
+    background-color: #7b89d6;
+    color: #23284C;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.vantagens-info h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.vantagens-info p {
+    font-size: 20px;
+    color: #4052cd;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.cadastre {
+    background: linear-gradient(to right, #6579FF, #4D59A9, #23284C);
+    color: #ffffff;
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.cadastre-info h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.cadastre-info p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.branco {
+    background-color: #ffffff;
+    color: #4052cd;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cadastre-form {
+    background: linear-gradient(to right, #abb4f3, #8c9bff, #6b7bf1);
+    width: 600px;
+    height: 400px;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.caixa {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: #666666;
+}
+
+.caixa input {
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 12px;
+    opacity: 50%;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 15%;
+    margin-bottom: 5%;
+}
+
+.card-produto {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+}
+
+.card-produto img {
+    height: 180px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-produto h4 {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 8px;
+    height: 32px;
+}
+
+.card-produto:hover {
+    transform: translateY(-3px);
+}
+
+.estrelas i {
+    color: #ffd452;
+    transition: 0.4s;
+    margin-bottom: 8px;
+}
+
+.estrelas i:hover {
+    transform: translateY(-3px);
+}
+
+.vitrine h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.vitrine p {
+    text-align: center;
+    color: #4052cd;
+    font-weight: 700;
+}
+
+.avaliacoes {
+    background-color: #4052cd;
+    padding: 50px 8%;
+}
+
+.avaliacoes h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.avaliacoes .produtos-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-avaliacao {
+    background: linear-gradient(to right, #343b68, #23273f, #23284C);
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.card-avaliacao .avatar {
+    font-size: 70px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card-avaliacao .estrelas {
+    color: #f1c40f;
+    font-size: 14px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.card-avaliacao p {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #7b89d6;
+    color: white;
+    padding: 40px 15% 15px 15%;
+    width: 100%;
+}
+
+.rodape-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 30px;
+
+}
+
+footer h5 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.pagamentos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 0;
+}
+
+.pagamentos img {
+    width: 45px;
+}
+
+.redes-sociais i {
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.rodape-dados {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.icones-topo a>i {
+    text-decoration: none;
+    color: #000000;
+
+}
