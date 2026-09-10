@@ -6,8 +6,9 @@
 }
 
 
-header {
-    background-color: white;
+
+#header {
+    background-color: var(--cor-fundo);
 }
 
 .menu {
@@ -17,20 +18,21 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+#logo {
+    color: var(--texto-principal);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo h1 {
+#logo h1 {
     font-size: 30px;
     font-weight: bold;
-    color: #444;
+
 }
 
 
-.logo img {
+#logo img {
     width: 100px;
     height: 100px;
 }
@@ -63,7 +65,7 @@ header {
     border-color: #5b6cf2;
 }
 
-.lista {
+#lista {
     background: none;
     border: none;
     font-size: 24px;
@@ -72,9 +74,25 @@ header {
     padding: 0;
 }
 
+#modo_escuro{
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#modo_escuro:hover{
+    transform: translateY(-3px);
+    color: #6579FF;
+}
+
 .descubra {
+
     width: 100%;
     background: linear-gradient(to right, #6579FF, #4D59A9, #23284C);
+    background-color: var(--cor-banner);
     color: #ffffff;
     padding: 100px;
     display: grid;
@@ -116,8 +134,8 @@ header {
     opacity: 0.9;
 }
 
-.branco {
-    background-color: #ffffff;
+#branco {
+    background-color:var(--botao);
     color: #4052cd;
     padding: 12px 24px;
     border-radius: 6px;
@@ -129,7 +147,7 @@ header {
     cursor: pointer;
 }
 
-.branco:hover {
+#branco:hover {
     transform: translateY(-3px);
     color: #ffffff;
     background-color: transparent;
@@ -137,7 +155,8 @@ header {
     border-color: #ffffff;
 }
 
-.vantagens {
+#vantagens {
+    background-color: white;
     padding: 100px;
 }
 
@@ -175,7 +194,7 @@ header {
 }
 
 .cadastre {
-    background: linear-gradient(to right, #6579FF, #4D59A9, #23284C);
+    background: var(--cor-banner);
     color: #ffffff;
     padding: 60px 8%;
     display: grid;
@@ -210,7 +229,7 @@ header {
 }
 
 .cadastre-form {
-    background: linear-gradient(to right, #abb4f3, #8c9bff, #6b7bf1);
+    background: var(--cor-banner);
     width: 600px;
     height: 400px;
     padding: 40px;
@@ -292,6 +311,10 @@ header {
     transform: translateY(-3px);
 }
 
+.vitrine{
+    background-color: white;
+}
+
 .vitrine h2 {
     margin-top: 30px;
     text-align: center;
@@ -346,8 +369,8 @@ header {
     line-height: 1.4;
 }
 
-footer {
-    background-color: #7b89d6;
+#rodape {
+    background-color: var(--rodape);
     color: white;
     padding: 40px 15% 15px 15%;
     width: 100%;
@@ -374,7 +397,7 @@ footer p {
 }
 
 footer a {
-    color: white;
+    color: var(--texto-principal-dark);
     text-decoration: none;
 }
 
@@ -406,4 +429,19 @@ footer a {
     text-decoration: none;
     color: #000000;
 
+}
+
+:root{
+    --cor-fundo: rgb(255, 255, 255);
+    --cor-fundo-dark: rgb(16, 14, 32);
+    --cor-banner: linear-gradient(to right, #6579FF, #4D59A9, #23284C);
+    --cor-banner-dark: linear-gradient(to right, #5161cc, #353d74, #101224);
+    --texto-principal: black;
+    --texto-principal-dark:white;
+    --botao:white;
+    --botao-dark:black;
+    --rodape:#7b89d6;
+    --rodape-dark:#1c1f35;
+    --card:#7b89d6;
+    --card-dark:#7b89d6;
 }
